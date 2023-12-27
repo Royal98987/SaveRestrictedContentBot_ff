@@ -100,12 +100,9 @@ async def run_batch(userbot, client, sender, link, _range):
             await client.send_message(sender, "Batch completed.")
             break
         try:
-            await get_bulk_msg(userbot, client, sender, link, i) 
-        
-                await client.send_message(sender, "Cancelling batch since you have floodwait more than 5 minutes.")
+            await get_bulk_msg(userbot, client, sender, link, i)
                 
             await get_bulk_msg(userbot, client, sender, link, i)
-     
-        await asyncio.sleep(timer)
+            
         await protection.delete()
             

@@ -104,5 +104,3 @@ async def run_batch(userbot, client, sender, link, _range):
                 
             await get_bulk_msg(userbot, client, sender, link, i)
             
-        await protection.delete()
-            
